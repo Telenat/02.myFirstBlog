@@ -20,5 +20,5 @@ urlpatterns = [
     url(r'^polls/', include('polls.urls')),
     url(r'^blog/', include('blog.urls')),
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.index, name='index'), #main inde[ for empty url
+    url(r'^', include('blog.urls')), #main inde[ for empty url
 ]
